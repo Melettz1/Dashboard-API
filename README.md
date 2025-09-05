@@ -17,7 +17,7 @@ Este projeto foi construído para demonstrar habilidades essenciais de desenvolv
 
 Você pode acessar e interagir com o projeto através do link abaixo:
 
-**[Ver a demonstração ao vivo]([https://dashboard-api-nine-jet.vercel.app/])**
+**https://dashboard-api-nine-jet.vercel.app/**
 
 ## ✨ Funcionalidades Principais
 
