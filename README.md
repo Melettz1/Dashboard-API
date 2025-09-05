@@ -43,7 +43,7 @@ Você pode acessar e interagir com o projeto através do link abaixo:
 
 ```bash
 # 1. Clone o repositório
-git clone [https://github.com/Melettz1/Dashboard-API/tree/main]
+git clone [https://github.com/Melettz1/Dashboard-API.git]
 
 # 2. Navegue até a pasta do projeto
 cd cripto-dashboard
