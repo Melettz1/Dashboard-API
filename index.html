@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cripto Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1 id="main-title">Cripto Dashboard</h1>
+            <p>Análise de mercado avançada com dados da CoinGecko</p>
+        </header>
+        
+        <div class="dashboard-grid">
+            <section id="crypto-ranking" class="card">
+                <div class="card-header">
+                    <h2>Ranking de Ativos</h2>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Ativo</th>
+                                <th>Preço</th>
+                                <th>24h %</th>
+                                <th>Cap. de Mercado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="crypto-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <div class="charts-and-details">
+                <section id="market-overview" class="card">
+                    <div class="card-header">
+                        <h2>Visão Geral</h2>
+                    </div>
+                    <div id="coin-details-card"></div>
+                </section>
+                
+                <section id="winners-losers-section" class="card">
+                    <div class="card-header">
+                        <h2>Ganhadoras e Perdedoras (24h)</h2>
+                    </div>
+                    <div id="winners-losers-container" class="chart-container-small"></div>
+                </section>
+
+                <section id="ath-chart-section" class="card">
+                    <div class="card-header">
+                        <h2 id="ath-chart-title">Preço vs. Recorde Histórico</h2>
+                    </div>
+                     <div class="chart-container-small">
+                        <canvas id="athChart"></canvas>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
